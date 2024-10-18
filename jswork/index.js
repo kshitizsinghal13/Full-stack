@@ -39,5 +39,7 @@
 // let total=sum(50,19)
 // console.log("hastar daadi k saath karega "+ total)
 
-console.dir(document)
+console.dir(document);
+const div=document.getElementsByClassName(parent);
+console.log(div)
 
