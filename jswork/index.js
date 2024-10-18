@@ -62,14 +62,62 @@
 // console.log(img)
 
 
-const button=document.getElementById("button");
-console.log(button)
-const display=document.getElementById("disp");
-console.log(display)
+// const button=document.getElementById("button");
+// console.log(button)
+// const display=document.getElementById("disp");
+// console.log(display)
 
-getdata=()=>{
-    console.log("hello bitch");
-    display.innerHTML="<h3 style=color:blue>I love you miss </h3>";
+// getdata=()=>{
+//     console.log("hello bitch");
+//     display.innerHTML="<h3 style=color:blue>I love you miss </h3>";
 
-}
-button.addEventListener("click",getdata); 
+// }
+// button.addEventListener("click",getdata); 
+// console.log("hello");
+
+// const promise = new Promise(
+// (resolve,reject)=>{
+//     let a=parseInt(Math.random()*100);
+//     if (a>100 & a<200){
+//         resolve("Value is rejected");
+//     }
+//     else{
+//         reject("Value is rejected");
+//    }
+// }
+// );
+// promise.then((msg)=>{console.log(msg)})
+// .catch(error=>{console.log(error)})
+// .finally(msg=>{console.log("All resources consumed")});
+
+const respons=fetch("https://dummyjson.com/products");
+respons.then(data=>{
+    console.log(data);
+    data.json().then(res=>{
+        let list=[];
+        for(let i=0;i<5;i++){
+            list.push(res.products[i].title);
+        }
+        document.write(list)
+
+
+
+    
+    })
+})
+
+
+
+
+
+
+
+
+
+
+
+
+const h1=document.createElement("h1");
+h1.innerText=res;
+div[0].appendChild(h1);
+console.log(h1);
