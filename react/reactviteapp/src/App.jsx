@@ -11,7 +11,7 @@ function App() {
     <div style={{color:'purple'}}>ABES Engineering College
       <div style={mystyle}>{a}</div>
       <div>
-        <Student />
+        <Student college="ABES ENGINEERING COLLEGE" name="Kshitiz" roll="91" branch="CSE" sec="Prime"/>
       </div>
 
     </div>
