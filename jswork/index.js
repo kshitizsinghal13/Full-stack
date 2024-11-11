@@ -90,21 +90,21 @@
 // .catch(error=>{console.log(error)})
 // .finally(msg=>{console.log("All resources consumed")});
 
-const respons=fetch("https://dummyjson.com/products");
-respons.then(data=>{
-    console.log(data);
-    data.json().then(res=>{
-        let list=[];
-        for(let i=0;i<5;i++){
-            list.push(res.products[i].title);
-        }
-        document.write(list)
+// const respons=fetch("https://dummyjson.com/products");
+// respons.then(data=>{
+//     console.log(data);
+//     data.json().then(res=>{
+//         let list=[];
+//         for(let i=0;i<5;i++){
+//             list.push(res.products[i].title);
+//         }
+//         document.write(list)
 
 
 
     
-    })
-})
+//     })
+// })
 
 
 
@@ -117,7 +117,40 @@ respons.then(data=>{
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+let p=document.getElementsByClassName("parent")
 const h1=document.createElement("h1");
-h1.innerText=res;
-div[0].appendChild(h1);
+h1.innerText="hello world";
+p[0].appendChild(h1);
 console.log(h1);
