@@ -1,7 +1,9 @@
 import React from 'react'
 
-export default function Studentstate() {
+function Studentstate() {
   return (
     <div>Studentstate</div>
   )
 }
+
+export default Studentstate
