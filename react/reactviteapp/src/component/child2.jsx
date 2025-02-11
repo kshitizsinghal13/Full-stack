@@ -1,11 +1,13 @@
-import React from 'react'
-import Child3 from './child3'
+import React, { useContext } from 'react'
+import { mycontext } from '../AppContext';
 
-function Child2({data}) {
+function Child2() {
+  const child2context=useContext(mycontext);
   return (
-    <div>
-      child 2 branch {data.branch}
-        <Child3 data={data} />
+    <div>Child2
+      <div>
+     branch:{child2context.branch}
+      </div>
     </div>
   )
 }
